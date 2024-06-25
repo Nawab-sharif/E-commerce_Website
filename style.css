@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue: rgba(54, 87, 134, 0.945);
+}
+
+.navbar {
+    background-color: var(--blue);
+    color: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    h1{
+        font-size: 3rem;
+    }
+
+    ul {
+        width: 50%;
+        height: 100%;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    ul li a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 3px;
+        color: white;
+    }
+
+    ul li a:hover {
+        background-color: white;
+        color: var(--blue);
+        border-radius: 5px;
+    }
+}
+
+#root {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+.card {
+    width: 400px;
+    height: 480px;
+    border: 4px solid var(--blue);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--blue);
+}
+
+.card h2{
+    font-size: 1.5rem;
+}
+
+.card img {
+    width: 60%;
+    height: 40%;
+
+}
+
+.card button {
+    padding: 12px 18px;
+    border-radius: 10px;
+    background-color: var(--blue);
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#cartlist{
+    display: flex;
+    /* border: 2px solid red; */
+}
+
+.cartBox{
+    width: 550px;
+    height: 450px;
+    border: 5px solid var(--blue);
+    background-color: white;
+    position: fixed;
+    overflow: auto;
+ /* backdrop-filter: blur(5px); */
+    right: 0px;
+    top: 80px;
+    display: none;
+}
+.cartBox .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    border-bottom: 5px solid var(--blue);
+    /* font-size: 20px; */
+}
+.cartBox .row button{
+    padding: 12px 18px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.priceSection{
+    height: 70px;
+    width: 550px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    gap: 15px;
+    background-color: var(--blue);
+    color: white;
+    position: fixed;
+    top: 460px;
+    right: 0px;
+}
